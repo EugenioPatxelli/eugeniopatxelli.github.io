@@ -126,7 +126,6 @@ img {
   border-radius: 4px;
   object-fit: cover;
   padding-bottom: 80px;
-
 }
 
 .introducao h1 {
@@ -161,4 +160,35 @@ img {
 
 .introducao a:hover {
   background: linear-gradient(#ffb60d, #e59317);
+}
+
+@media (max-width: 1200px) {
+  .introducao h1 {
+    font-size: 48px;
+  }
+  .introducao p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao-bg {
+    background: #111111;
+    padding-top: 32px;
+  }
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .introducao-conteudo {
+    padding-bottom: 0px;
+  }
+  .introducao h1 {
+    font-size: 32px;
+    margin-bottom: 18px;
+  }
+  .introducao img {
+    height: 300px;
+    width: 100%;
+  }
 }
